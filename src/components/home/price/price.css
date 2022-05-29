@@ -1,0 +1,55 @@
+.price {
+  text-align: center;
+}
+.price .content .box {
+  width: 31.5%;
+  padding: 30px;
+  border-radius: 10px;
+}
+.price button {
+  margin-bottom: 20px;
+}
+.price .box:nth-child(1) .topbtn button,
+.price .box:nth-child(3) .topbtn button {
+  display: none;
+}
+.price h3 {
+  font-size: 22px;
+}
+.price h1 {
+  font-size: 60px;
+}
+.price h1 span {
+  font-size: 30px;
+  font-weight: 500;
+}
+.price ul {
+  margin-top: 40px;
+}
+.price ul li {
+  display: flex;
+  margin-bottom: 20px;
+}
+.price label {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.price .btn5 {
+  width: 100%;
+}
+@media screen and (max-width: 800px) {
+  .price .content {
+    flex-direction: column;
+  }
+
+  .price .content .box {
+    width: 100%;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 50px;
+  }
+}
