@@ -3,56 +3,83 @@
   padding: 40px 0;
   color: #fff;
 }
+
 .footerContact h1 {
   font-size: 40px;
 }
+
 footer {
   background-color: #1d2636;
   padding: 50px 0;
   color: #fff;
 }
+
 footer .container {
-  display: grid;
-  grid-template-columns: 6fr 2fr 2fr 1fr;
-  grid-gap: 20px;
+  display: flex; /* Change to flex for better control */
+  flex-direction: row; /* Stack items vertically */
+  align-items: center;
+ /* Center align items */
+ justify-content: space-evenly;
 }
-footer img {
-  width: 150px;
+
+.logo-section {
+  text-align: center; /* Center logo and slogan */
 }
-footer h2 {
-  font-weight: 500;
+
+.footer-logo {
+  width: 150px; /* Adjust size as needed */
 }
-footer p {
-  color: grey;
-  margin: 20px 0;
+
+.slogan {
+  font-size: 16px;
+  color: #2fe078; /* Adjust slogan color */
 }
-footer input {
-  background-color: #fff;
-  padding: 17px;
-  width: 100%;
-  border-radius: 5px;
+
+.social-media {
+  text-align: center;
+  margin-top: 20px; /* Space below logo section */
 }
+
+.social-icons {
+  display: flex;
+  justify-content: center; /* Center social icons */
+}
+
+.social-icons a {
+  margin: 0 10px; /* Space between icons */
+  font-size: 24px; /* Icon size */
+  color: #58de60; /* Icon color */
+}
+
+.box {
+  margin-top: 30px; /* Space above each box */
+}
+
 footer h3 {
   font-weight: 500;
-  margin-bottom: 30px;
 }
+
 footer ul {
   display: block;
 }
+
 footer ul li {
   display: block;
   color: grey;
   margin-bottom: 20px;
 }
+
 .legal {
   text-align: center;
   padding: 20px;
   background: #1d2636;
-  color: rgba(255, 255, 255, 0.5);
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: rgba(255,255,255,0.5);
+  border-top: 1px solid rgba(255,255,255,0.1);
 }
-@media screen and (max-width: 800px) {
-  footer .container {
-    grid-template-columns: repeat(2, 1fr);
-  }
+
+/* Responsive Design */
+@media screen and (max-width:800px) {
+    footer .container {
+        flex-direction: column; /* Stack items vertically on small screens */
+    }
 }
